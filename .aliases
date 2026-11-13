@@ -6,12 +6,11 @@ alias cat='bat --paging never --decorations never --plain'
 
 # fzf
 alias dirf='fd -H -t d | fzf'
-alias cdf='cd $(dirf)'
-alias zf='zed $(dirf)'
-alias codef='code $(dirf)'
+alias cdf='cd $(fd -H -t d | fzf)'
+alias zf='zed $(fd -H -t d | fzf)'
+alias codef='code $(fd -H -t d | fzf)'
 
-
-# utils
+# other helpers
 alias ytmdl='yt-dlp -x --audio-format mp3'
 alias ytdl='yt-dlp -f "bv*+ba/b" --merge-output-format mp4 "$1"'
 alias wgetdl='wget -c --content-disposition'
