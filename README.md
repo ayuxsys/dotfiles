@@ -5,7 +5,7 @@ blah
 ### Installation
 
 ```sh
-rm -rf ~/dotfiles && git clone https://github.com/ayuxsys/dotfiles --depth=1
+rm -rf ~/dotfiles && git clone https://github.com/ayuxsys/dotfiles ~/dotfiles --depth=1
 ```
 
 update `~/.gitconfig`
