@@ -1,7 +1,13 @@
 #!/bin/bash
 
 alias mv='mv -i'
-alias cdf='cd $(fd -H -t d | fzf)'
+
+# fzf
+alias dirf='fd -H -t d | fzf'
+alias cdf='cd $(dirf)'
+alias zf='zed $(dirf)'
+alias codef='code $(dirf)'
+
 alias cat='bat --paging never --decorations never --plain'
 
 # utils
