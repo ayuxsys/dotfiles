@@ -1,0 +1,10 @@
+#!/bin/bash
+
+alias mv='mv -i'
+alias cdf='cd $(fd -H -t d | fzf)'
+alias cat='bat --paging never --decorations never --plain'
+
+# utils
+alias ytmdl='yt-dlp -x --audio-format mp3'
+alias ytdl='yt-dlp -f "bv*+ba/b" --merge-output-format mp4 "$1"'
+alias wgetdl='wget -c --content-disposition'
