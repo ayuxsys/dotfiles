@@ -10,7 +10,14 @@ alias cdf='cd $(fd -H -t d | fzf)'
 alias zf='zed $(fd -H -t d | fzf)'
 alias codef='code $(fd -H -t d | fzf)'
 
-# other helpers
-alias ytmdl='yt-dlp -x --audio-format mp3'
-alias ytdl='yt-dlp -f "bv*+ba/b" --merge-output-format mp4 "$1"'
+# yt-dlp wrappers
+
+## Music
+alias ytmdl='yt-dlp -x --audio-format mp3 --audio-quality 0'
+alias ytmpdl='yt-dlp --yes-playlist -x --audio-format mp3 --audio-quality 0 --embed-metadata --embed-thumbnail -o "%(playlist_title)s/%(playlist_index)03d - %(title)s.%(ext)s"'
+
+## Video
+alias ytdl='yt-dlp -f "bv*+ba/b" --merge-output-format mp4'
+alias ytpdl='yt-dlp --yes-playlist -f "bv*+ba/b" --merge-output-format mp4 -o "%(playlist_title)s/%(playlist_index)03d - %(title)s.%(ext)s"'
+
 alias wgetdl='wget -c --content-disposition'
