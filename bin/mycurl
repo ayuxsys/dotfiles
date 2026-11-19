@@ -27,3 +27,5 @@ mycurl() {
     --tls-signed-cert-timestamps \
     "$@"
 }
+
+mycurl "$@"
