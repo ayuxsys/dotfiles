@@ -18,7 +18,7 @@ update `~/.gitconfig`
 update `~/.bashrc` (or `.zshrc`)
 
 ```sh
-source ~/dotfiles/.aliases
+source ~/dotfiles/.shellrc
 ```
 
 #### Prerequisites
