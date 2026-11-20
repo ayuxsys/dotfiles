@@ -3,6 +3,7 @@
 # overrides
 alias mv='mv -i'
 alias cat='bat --paging never --decorations never --plain'
+alias catlias='cat ~/dotfiles/.aliases'
 
 # fzf
 alias dirf='fd -H -t d | fzf'
